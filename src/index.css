@@ -1,0 +1,377 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+  background-color: rgba(0, 0, 0, 0.856);
+  color: white;
+}
+
+@media (min-width:769px) {
+  .active {
+    color: green;
+    background-color: transparent;
+
+  }
+}
+
+.product{
+  transition: all 100ms;
+}
+.product:hover
+{
+  box-shadow: var(--shadow);
+  border: solid 1px var(--main-color);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.product .btn 
+{
+  transition: transform 0.5s , opacity 0.5s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.product:hover .btn 
+{
+  opacity: 1;
+  transform: translateY(0%);
+
+}
+.product:hover .wishlist 
+{
+    opacity: 1;
+    transform: translateX(0%);
+
+}
+.meal:hover  {
+  transform: scale(1.08);
+}
+.meal{
+  transition: all ease-in-out 0.3s;
+}
+
+.item{
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+
+}
+.text{
+  position: absolute;
+  top:100%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.4s ease-in-out;
+
+}
+.item:hover .text{
+top:0px;
+}
+
+
+
+
+.about-page {
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+.about-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.856);
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: white;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #777777;
+}
+
+.hero-image img {
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.about-story, .about-mission, .about-team, .about-social {
+  padding: 60px;
+  text-align: center;
+}
+
+.about-story {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.story-content {
+  max-width: 600px;
+}
+
+.story-image img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.about-mission ul {
+  list-style-type: none;
+}
+
+.about-mission ul li {
+  font-size: 22px;
+  color: white;
+  margin: 10px auto;
+  padding: 3px 0;
+  background-color: #777777;
+  width: 50%;
+}
+
+.about-team .team-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.team-member img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 30px;
+  margin: 0 10px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  color: rgb(85, 81, 81);
+
+
+}
+
+
+/* chat */
+
+
+/* Chat.css */
+/* 
+.chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chat-toggle-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-toggle-button:hover {
+  background-color: #e55347;
+}
+
+.chat-popup {
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.chat-popup-header {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.chat-popup-body {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-popup-message {
+  padding: 8px 12px;
+  border-radius: 20px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #ff6347;
+  color: white;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #e1e1e1;
+  color: black;
+}
+
+.chat-popup-footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.send-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #e55347;
+} */
+
+.chat-toggle-button {
+  background-color: #0070f3;
+  color: white;
+  border-radius: 10%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.chat {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 999;
+}
+
+
+
+.chat-popup {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 400px;
+}
+
+
+.chat-popup-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.chat-popup-body {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+
+.chat-popup-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+
+.user-message {
+  background-color: #e1ffc7;
+  align-self: flex-start;
+}
+
+
+.bot-message {
+  background-color: #f1f0f0;
+  align-self: flex-end;
+}
+
+
+.chat-input {
+  width: calc(100% - 100px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+.send-button {
+  padding: 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width:575px) {
+  .chat {
+      position: fixed;
+      bottom: 30px;
+      right: 0px;
+      z-index: 100;
+  }
+
+  .chat-popup {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* padding: 10px; */
+      position: fixed;
+      bottom: 90px;
+      right: 0px;
+      width: 380px;
+      margin:auto;
+}
+
+}
