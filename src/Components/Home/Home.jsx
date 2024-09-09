@@ -7,7 +7,6 @@ import useMeals from '../../Hooks/useMeals.jsx'
 import Loading from '../Loading/Loading.jsx'
 import yummy from '../../assets/yummy.jpg'
 import Chat  from '../Chat/Chat.jsx'
-// import SmallScreen from "./(componens)/chatPopup/page";
 
 export default function Home() {
 
